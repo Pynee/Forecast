@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Forecast</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="forecast">⛅\nForecast</string>
+    <string name="graph">📈\nGraph</string>
+    <string name="dataProvided">Data provided by</string>
+    <string name="lastUpdate">Last update on</string>
+    <string name="date">10:00 23.4</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="overmorrow">Overmorrow</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="windspeed">💨</string>
+    <string name="temperature">🌡</string>
+    <string name="humidity">🌫</string>
+    <string name="precipitationAmount">💧</string>
+    <string name="error">No location available</string>
+    <string name="errorLoadingData">Error loading weather data</string>
+    <string name="favoriteItemDescription">favorite place</string>
+
+    <string name="units">Units</string>
+    <string name="metric">Metric</string>
+    <string name="imperial">Imperial</string>
+    <string name="theme">Theme</string>
+    <string name="automatic">Automatic</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="setLocation">➤</string>
+    <string name="searchLocation">⌕</string>
+    <string name="mapviewGuide">Select a forecast location</string>
+
+    <string name="aboutText">By Jaakko Ylä-Pynnönen\nSource available at https://github.com/Pynee/Forecast\nVersion: 0.8.0</string>
+    <string name="navigation_drawer_open">Navigation drawer open</string>
+    <string name="navigation_drawer_close">Navigation drawer close</string>
+</resources>

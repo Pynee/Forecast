@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/dayLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dayTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/today"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse" />
+
+                <TextView
+                    android:id="@+id/updateTimeStampView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+                    tools:text="Last updated on 12.04.2020 14:00" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <org.duckdns.pynetti.forecast.forecastview.ForecastItemView
+                    android:id="@+id/forecastMorningView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+
+                    app:layout_constraintEnd_toStartOf="@+id/forecastAfternoonView"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:timeString="@string/morning" />
+
+                <org.duckdns.pynetti.forecast.forecastview.ForecastItemView
+                    android:id="@+id/forecastAfternoonView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+
+                    app:layout_constraintEnd_toStartOf="@+id/forecastEveningView"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/forecastMorningView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:timeString="@string/afternoon" />
+
+                <org.duckdns.pynetti.forecast.forecastview.ForecastItemView
+                    android:id="@+id/forecastEveningView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/forecastAfternoonView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:timeString="@string/evening" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</merge>

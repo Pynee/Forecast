@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="ForecastDayItemView">
+        <attr name="dateString" format="string" />
+
+    </declare-styleable>
+    <declare-styleable name="ForecastItemView">
+        <attr name="timeString" format="string" />
+
+    </declare-styleable>
+</resources>
